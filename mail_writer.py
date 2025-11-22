@@ -14,9 +14,8 @@ web_search_preview = WebSearchTool(
 with open("instructions_prospector.txt", "r", encoding="utf-8") as f:
     INSTRUCTIONS = f.read()
 
-# Charger le prompt depuis un fichier externe
-with open("prompt_prospector.txt", "r", encoding="utf-8") as f:
-    PROMPT = f.read()
+
+PROMPT = "{'first_name': 'Morgane', 'last_name': 'Hennebel', 'website': 'https://www.antenia.com', 'partner_name': 'Antenia', 'function': 'Responsable communication et marketing', 'description': 'Développement de logiciels'}"
 
 class MyAgentSchema(BaseModel):
   subject: str
